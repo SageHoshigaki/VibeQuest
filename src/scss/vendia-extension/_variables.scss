@@ -1,0 +1,153 @@
+$border: #e5e5e5 !default;
+$border-hover: #f5f5f5 !default;
+$border-light: #fafafa !default;
+$border-light-hover: #f5f5f5 !default;
+
+$radius: 0px !default;
+$radius-small: 0.375rem !default;
+$radius-large: 0.5rem !default;
+$radius-2x-large: 9999px !default;
+
+$text: #171717 !default;
+$text-strong: #000 !default;
+
+$primary: #F2FF5A !default;
+$success: #16a34a !default;
+$info: #3b82f6 !default;
+$warning: #F2FF5A !default;
+$danger: #dc2626 !default;
+$light: #f5f5f5 !default;
+$dark: #000 !default;
+$orange: #f97316 !default;
+$green: #22c55e !default;
+$blue: #3b82f6 !default;
+$red: #ef4444 !default;
+
+$black-bis: #262626 !default;
+$black-ter: #404040 !default;
+$grey-darker: #111215 !default;
+$grey-dark: #212124 !default;
+$grey-light: #334155 !default;
+$grey-lighter: #a3a3a3 !default;
+$white-ter: #fafafa !default;
+$white-bis: #e5e5e5 !default;
+
+$link: #F2FF5A !default;
+$link-visited: #d9e551 !default;
+$link-hover: #d9e551 !default;
+$link-hover-border: transparent !default;
+$link-focus: #d9e551 !default;
+$link-focus-border: transparent !default;
+$link-active: #F2FF5A !default;
+$link-active-border: transparent !default;
+$body-letter-spacing: null !default;
+
+$container-max-width: 1280px !default;
+
+$body-family: Satoshi,sans-serif,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+$title-family: Satoshi,sans-serif,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+$title-color: #000 !default;
+$title-weight: 700 !default;
+
+$subtitle-family: Satoshi,sans-serif,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !default;
+$subtitle-color: #a3a3a3 !default;
+$subtitle-line-height: 1.5rem !default;
+$subtitle-weight: 400 !default;
+$subtitle-size: 1rem !default;
+
+$size-1: 3rem !default;
+$size-2: 2rem !default;
+$size-3: 1.5rem !default;
+$size-4: 1.313rem !default;
+$size-5: 1rem !default;
+$size-6: 0.875rem !default;
+$size-7: 0.75rem !default;
+
+$enable-negative-margins: true !default;
+$section-padding: 5rem 1.5rem !default;
+$section-padding-desktop: 5rem 3rem !default;
+
+$tag-color: #000 !default;
+$tag-radius: 0px !default;
+$tag-delete-margin: 1px !default;
+
+$control-height: 3em !default;
+$size-normal: 1rem !default;
+
+$button-padding-vertical: 1rem !default;
+$button-padding-horizontal: 1.25rem !default;
+
+$box-radius: 0px !default;
+$box-shadow: none !default;
+$box-background-color: transparent !default;
+$box-border-color: #262626 !default;
+$box-border-width: 1px !default;
+$box-border-style: solid !default;
+
+$card-radius: 0.25rem !default;
+$card-shadow: 0px 14px 34px rgba(79, 70, 229, 0.2), 0px 4px 25px rgba(48, 41, 91, 0.15) !default;
+
+$panel-radius: 0.25rem !default;
+$panel-shadow: none !default;
+
+$input-border-color: #212124 !default;
+$input-color: #e5e5e5 !default;
+$input-placeholder-color: #e5e5e5 !default;
+$input-background-color: transparent !default;
+
+$label-color: #a3a3a3 !default;
+$label-weight: 500 !default;
+
+$pagination-border-color: transparent !default;
+$pagination-color: #fff !default;
+$pagination-item-font-size: 0.875rem !default;
+$pagination-item-padding-right: 0.5rem !default;
+$pagination-item-padding-left: 0.5rem !default;
+$pagination-nav-padding-right: 0.5rem !default;
+$pagination-nav-padding-left: 0.5rem !default;
+$pagination-hover-color: #e5e5e5 !default;
+$pagination-active-color: #000 !default;
+
+$navbar-item-font-size: 1rem !default;
+$navbar-item-font-weight: 500 !default;
+$navbar-item-color: #fff !default;
+$navbar-item-hover-color: #f5f5f5 !default;
+$navbar-item-hover-background-color: transparent !default;
+$navbar-item-padding-x: 2rem !default;
+$navbar-item-padding-y: .5rem !default;
+
+$notification-radius: $radius !default;
+$notification-color: null !default;
+$notification-font-size: null !default;
+
+$notification-border-width: 0 !default;
+$notification-border-top-width: $notification-border-width !default;
+$notification-border-right-width: $notification-border-width !default;
+$notification-border-bottom-width: $notification-border-width !default;
+$notification-border-left-width: $notification-border-width !default;
+
+$notification-border-top-right-radius: $notification-radius !default;
+$notification-border-top-left-radius: $notification-radius !default;
+$notification-border-bottom-right-radius: $notification-radius !default;
+$notification-border-bottom-left-radius: $notification-radius !default;
+
+$radius-2x-large: .5rem !default;
+
+$button-font-weight: 700 !default;
+
+$body-letter-spacing: null !default;
+
+$leading-1: null !default;
+$leading-2: null !default;
+$leading-3: null !default;
+$leading-4: null !default;
+$leading-5: null !default;
+$leading-6: null !default;
+$leading-7: null !default;
+
+$blur-background-color: null !default;
+$blur-background-filter: null !default;
+
+$input-family: null !default;
+
+$heading-text-transform: none !default;

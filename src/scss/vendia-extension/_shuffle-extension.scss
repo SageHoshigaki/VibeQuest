@@ -1,0 +1,183 @@
+/*!
+ * Shuffle CSS Extension for Bulma
+ * Copyright 2021 The Shuffle Team
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import "maxmaxmax/variables";
+@import "variables";
+
+body {
+    letter-spacing: $body-letter-spacing;
+}
+
+.notification {
+    color: $notification-color;
+    font-size: $notification-font-size;
+
+    border-top-width: $notification-border-top-width;
+    border-right-width: $notification-border-right-width;
+    border-bottom-width: $notification-border-bottom-width;
+    border-left-width: $notification-border-left-width;
+
+    border-top-right-radius: $notification-border-top-right-radius;
+    border-top-left-radius: $notification-border-top-left-radius;
+    border-bottom-right-radius: $notification-border-bottom-right-radius;
+    border-bottom-left-radius: $notification-border-bottom-left-radius;
+    
+    @each $name, $pair in $notification-colors {
+        &.is-#{$name} {
+            @if $notification-color {
+                color: $notification-color !important;
+            }
+            @if length($pair) >= 3 {
+                border-style: solid;
+                border-color: nth($pair, 3);
+            }
+            &.is-light {
+                @if $notification-color {
+                    color: $notification-color !important;
+                }
+                @if length($pair) >= 4 {
+                    border-style: solid;
+                    border-color: nth($pair, 4);
+                }
+            }
+        }
+    }
+}
+
+.navbar-item,
+.navbar-link {
+    padding: $navbar-item-padding-y $navbar-item-padding-x;
+    font-size: $navbar-item-font-size;
+    font-weight: $navbar-item-font-weight,
+}
+
+.is-absolute { position: absolute; }
+.is-relative { position: relative; }
+.is-fixed { position: fixed; }
+.is-sticky { position: sticky; }
+
+.is-top-0 { top: 0; }
+.is-right-0 { right: 0; }
+.is-bottom-0 { bottom: 0; }
+.is-left-0 { left: 0; }
+.is-inset-0 { 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.is-cover { object-fit: cover; }
+.is-rounded { border-radius: $radius-2x-large; }
+
+.box {
+    border-width: $box-border-width;
+    border-color: $box-border-color;
+    border-style: $box-border-style;
+}
+
+.button {
+    font-weight: $button-font-weight;
+}
+
+.heading {
+    text-transform: $heading-text-transform !important;
+}
+
+.has-leading-1 { line-height: $leading-1; }
+.has-leading-2 { line-height: $leading-2; }
+.has-leading-3 { line-height: $leading-3; }
+.has-leading-4 { line-height: $leading-4; }
+.has-leading-5 { line-height: $leading-5; }
+.has-leading-6 { line-height: $leading-6; }
+.has-leading-7 { line-height: $leading-7; }
+
+.has-leading-1 { line-height: $leading-1; }
+.has-leading-2 { line-height: $leading-2; }
+.has-leading-3 { line-height: $leading-3; }
+.has-leading-4 { line-height: $leading-4; }
+.has-leading-5 { line-height: $leading-5; }
+.has-leading-6 { line-height: $leading-6; }
+.has-leading-7 { line-height: $leading-7; }
+
+.has-background-blur { 
+    background: $blur-background-color; 
+    backdrop-filter: $blur-background-filter; 
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: $input-family;
+}
+
+.has-text-primary-gradient {
+    background-color: #FBFF25;
+    background-image: linear-gradient(112.57deg, #FBFF25 0%, #E7E542 21.87%, #AAEA5E 45.31%, #51D9C6 69.79%, #4AA8FF 100%);
+    font-weight: bold;
+    color: transparent; 
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+a.has-text-primary-gradient:hover {
+    background-color: #FBFF25;
+    background-image: linear-gradient(112.57deg, #FBFF25 0%, #E7E542 21.87%, #AAEA5E 45.31%, #51D9C6 69.79%, #4AA8FF 100%);
+    font-weight: bold;
+    color: transparent; 
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
+.has-background-gradient-primary {
+    background-image: linear-gradient(112.57deg, #FBFF25 0%, #E7E542 21.87%, #AAEA5E 45.31%, #51D9C6 69.79%, #4AA8FF 100%);
+}
+
+.has-background-gradient-success {
+    background-image: linear-gradient(112.57deg, #C0C320 0%, #54C320 21.87%, #20C33A 45.31%, #20C39C 69.79%, #20C3B9 100%);
+}
+
+.has-background-gradient-warning {
+    background-image: linear-gradient(112.57deg, #FF5C29 0%, #FF7629 21.87%, #FFBB29 45.31%, #E1FF29 69.79%, #87FF29 100%);
+}
+
+.has-background-gradient-info {
+    background-image: linear-gradient(112.57deg, #45E4FA 0%, #45C4FA 21.87%, #457EFA 45.31%, #4562FA 69.79%, #A045FA 100%);
+}
+
+.has-background-gradient-danger {
+    background-image: linear-gradient(112.57deg, #FF985F 0%, #FE3434 21.87%, #FF3131 45.31%, #FF6231 69.79%, #FFA031 100%);
+}
+
+.button.has-background-gradient-primary, 
+.button.has-background-gradient-success, 
+.button.has-background-gradient-warning, 
+.button.has-background-gradient-info, 
+.button.has-background-gradient-danger {
+    color: #000000;
+    transition: all .250s ease-in-out;
+}
+
+.button.has-background-gradient-primary:hover, 
+.button.has-background-gradient-success:hover, 
+.button.has-background-gradient-warning:hover, 
+.button.has-background-gradient-info:hover, 
+.button.has-background-gradient-danger:hover {
+    background-image: linear-gradient(8deg, #FBFF25 0%, #E7E542 21.87%, #AAEA5E 45.31%, #51D9C6 69.79%, #4AA8FF 100%)
+}
+
+.is-borderless {
+    border: 0;
+}
+
+.button.is-link {
+    color: transparent;
+}
+
+@import "maxmaxmax/extension-max-spacing";
+@import "maxmaxmax/extension-max-width";
